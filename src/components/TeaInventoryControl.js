@@ -40,5 +40,28 @@ class TeaInventoryControl extends React.Component {
     this.setState({ selectedTea: selectedTea });
   }
 
-  
+  render() {
+    let currentlyVisibleState = null;
+    let buttonText = null;
+
+    if (this.state.selectedTea != null) {
+      currentlyVisibleState = <TeaDetails tea={this.state.selectedTea} />
+      buttonText = "Return to Inventory";
+    } else if (this.state.formVisibleOnPage) {
+      currentlyVisibleState = <StockInventoryForm onStockNewInventory={this.handleAddingNewTeaToInventory} />
+      buttonText = "Return to Inventory";
+    } else {
+      currentlyVisibleState = <Inventory inventory={this.state.inventory} onTeaSelection={this.handleChangingSelectedTea} />
+      buttonText = "Stock Inventory";
+    }
+
+    return (
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    )
+  }
 }
+
+export default TeaInventoryControl;

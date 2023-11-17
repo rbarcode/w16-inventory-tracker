@@ -29,3 +29,5 @@ function TeaDetails(props) {
 TeaDetails.propTypes = {
   tea: PropTypes.object
 }
+
+export default TeaDetails;
