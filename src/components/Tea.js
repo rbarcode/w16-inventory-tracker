@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Tea(props){
+function Tea(props) {
   return (
     <React.Fragment>
       <h3>{props.name}</h3>
@@ -13,5 +13,13 @@ function Tea(props){
     </React.Fragment>
   )
 };
+
+Tea.propTypes = {
+  name: PropTypes.string,
+  origin: PropTypes.string,
+  type: PropTypes.string,
+  price: PropTypes.number,
+  quantity: PropTypes.number
+}
 
 export default Tea;
