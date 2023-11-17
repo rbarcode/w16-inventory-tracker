@@ -20,23 +20,23 @@ function StockInventoryForm(props) {
       <h3>Stock New Inventory</h3>
       <hr/>
       <form onSubmit={handleStockInventoryFormSubmission}>
-        <label for='name'>Tea Name: </label>
+        <label htmlFor='name'>Tea Name: </label>
         <input 
           type='text' 
           name='name' />
         <br/>
-        <label for='origin'>Origin: </label>
+        <label htmlFor='origin'>Origin: </label>
         <input 
           type='text' 
           name='origin' />
         <br/>
-        <label for='type'>Type: </label>
+        <label htmlFor='type'>Type: </label>
         <input 
           type='text' 
           name='type'  
           placeholder='black, green, oolong, etc.' />
         <br/>
-        <label for='price'>Price: </label>
+        <label htmlFor='price'>Price: </label>
         <input 
           type='number' 
           name='price' />

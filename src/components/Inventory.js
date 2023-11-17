@@ -6,13 +6,15 @@ function Inventory(props){
   return (
     <React.Fragment>
       <hr/>
-      {props.inventory.map((tea) => 
+      {props.inventory.map((tea, index) => 
         <Tea 
         whenTeaClicked = { props.onTeaSelection } 
         name={tea.name} 
         origin={tea.origin}  
         type={tea.type}  
-        price={tea.price}/> 
+        price={tea.price}
+        quantity={tea.quantity} 
+        key={index}/> 
       )}
     </React.Fragment>
   );
