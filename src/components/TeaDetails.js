@@ -26,7 +26,7 @@ function TeaDetails(props) {
         <h5>Type: {tea.type}</h5>
         <h5>Price: {tea.price}</h5>
         <h5>Remaining Inventory: {tea.quantity}oz.</h5>
-        <div>
+        <div className="tea-details-btn">
           <button onClick={handleDecrementTea}>Sell Tea</button>
           <button onClick={handleIncrementTea}>Restock Tea</button>
         </div>
