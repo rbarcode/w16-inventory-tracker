@@ -9,7 +9,6 @@ function TeaDetails(props) {
   }
 
   function handleDecrementTea() {
-    // const newQuantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
     if (tea.quantity > 0) {
       const newQuantity = tea.quantity - 1;
       onTeaUpdate({name: tea.name, origin: tea.origin, type: tea.type, price: tea.price, quantity: newQuantity, id: tea.id});

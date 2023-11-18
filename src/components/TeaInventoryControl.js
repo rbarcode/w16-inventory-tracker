@@ -46,7 +46,7 @@ class TeaInventoryControl extends React.Component {
       .concat(updatedTea);
     this.setState({
       inventory: editedInventory,
-      selectedTea: null
+      selectedTea: updatedTea
     });
   }
 
