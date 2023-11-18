@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 function TeaDetails(props) {
   const { tea } = props;
 
-  function handleIncrementTea() {
-    tea.quantity += 130;
+  function handleIncrementTea(props) {
+    props.onTeaUpdate({name: tea.name, origin: tea.origin, price: tea.price, quantity: tea.quantity += 130, id: tea.id});
   }
 
-  function handleDecrementTea() {
-    return tea.quantity > 0 ? tea.quantity-- : tea.quantity;
+  function handleDecrementTea(props) {
+    const newQuantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
+    props.onTeaUpdate({name: tea.name, origin: tea.origin, price: tea.price, quantity: newQuantity, id: tea.id});
   }
 
   return (
@@ -27,7 +28,8 @@ function TeaDetails(props) {
 }
 
 TeaDetails.propTypes = {
-  tea: PropTypes.object
+  tea: PropTypes.object,
+  onTeaUpdate: PropTypes.func
 }
 
 export default TeaDetails;
