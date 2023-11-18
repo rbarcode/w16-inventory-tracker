@@ -2,15 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function TeaDetails(props) {
-  const { tea } = props;
+  const { tea, onTeaUpdate } = props;
 
-  function handleIncrementTea(props) {
-    props.onTeaUpdate({name: tea.name, origin: tea.origin, price: tea.price, quantity: tea.quantity += 130, id: tea.id});
+  function handleIncrementTea() {
+    onTeaUpdate({name: tea.name, origin: tea.origin, type: tea.type, price: tea.price, quantity: tea.quantity += 130, id: tea.id});
   }
 
-  function handleDecrementTea(props) {
-    const newQuantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
-    props.onTeaUpdate({name: tea.name, origin: tea.origin, price: tea.price, quantity: newQuantity, id: tea.id});
+  function handleDecrementTea() {
+    // const newQuantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
+    if (tea.quantity > 0) {
+      const newQuantity = tea.quantity - 1;
+      onTeaUpdate({name: tea.name, origin: tea.origin, type: tea.type, price: tea.price, quantity: newQuantity, id: tea.id});
+    } else {
+      return;
+    }
   }
 
   return (

@@ -40,7 +40,7 @@ class TeaInventoryControl extends React.Component {
     this.setState({ selectedTea: selectedTea });
   }
 
-  handleUpdateSelectedTea = (updatedTea) => {
+  handleUpdatingSelectedTea = (updatedTea) => {
     const editedInventory = this.state.inventory
       .filter(tea => tea.id !== this.state.selectedTea.id)
       .concat(updatedTea);
@@ -55,7 +55,7 @@ class TeaInventoryControl extends React.Component {
     let buttonText = null;
 
     if (this.state.selectedTea != null) {
-      currentlyVisibleState = <TeaDetails tea={this.state.selectedTea} onTeaUpdate={this.handleUpdateSelectedTea} />
+      currentlyVisibleState = <TeaDetails tea={this.state.selectedTea} onTeaUpdate={this.handleUpdatingSelectedTea} />
       buttonText = "Return to Inventory";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <StockInventoryForm onStockNewInventory={this.handleAddingNewTeaToInventory} />
