@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Tea Inventory Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### By Richard Barbour II
+
+#### A React single page app using local and shared state to track inventory.
+
+
+## Technologies Used
+
+Programming Languages:
+* [HTML](https://html.spec.whatwg.org/) ([MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML))
+* [CSS](https://www.w3.org/TR/CSS/#css) ([MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS))
+* [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/) ([MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)) / [JSX](https://facebook.github.io/jsx/)
+
+Platforms:
+* [Node.js](https://nodejs.org/en/) (16.13.1)
+
+Package Managers:
+* [npm](https://www.npmjs.com/) (8.1.2)
+
+
+Libraries:
+* [React](https://react.dev/)
+
+
+## Description
+
+The user can stock the inventory for a tea shop by adding new teas and include the name, origin, type and price. The user can also view the entire selection of teas currently in inventory as well as select individual teas to increase (by 130oz.) or decrease (by 1oz.) the quantity in inventory. 
+
+## Component Diagram
+
+<img src="src/img/component-diagram.png">
+
+## Setup/Installation Requirements
+
+1. Navigate to https://github.com/rbarcode/w16-inventory-tracker in an internet browser.
+2. Click on the green “<> Code” on the far right-hand side of the page's main column.
+3. On the “Local” tab of the mini-window that opens underneath the “<>Code” button, copy the HTTPS link in the gray bar to your clipboard.
+4. In GitBash (or a terminal shell of your choice), navigate to the directory where you wish to download the project and enter the following prompt (replacing the asterisked word with the appropriate link):\
+`git clone *url-of-the-repository-copied-in-the-previous-step*`
+5. Your chosen directory will now contain a folder titled w16-inventory-tracker.
+6. Navigate into the folder. This is the project's root directory.  
+7. After ensuring you have the JavaScript runtime environment Node.js installed on your computer, run the following command from your terminal in the project's root directory:\
+`npm install`  
 
 ## Available Scripts
 
-In the project directory, you can run:
+To build the project in development mode, run the following command from your terminal in the project's root directory:\
+`npm start`
 
-### `npm start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Known Bugs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No known bugs.
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MIT License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Copyright (c) 2023 Richard Barbour II
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `npm run eject`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
