@@ -5,8 +5,11 @@ import TeaInventoryControl from "./TeaInventoryControl";
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <TeaInventoryControl />
+      <div className="app-container">
+        <Header />
+        <TeaInventoryControl />
+      </div>
+
     </React.Fragment>
   );
 }

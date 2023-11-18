@@ -68,7 +68,10 @@ class TeaInventoryControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div className="inventory-ctrl-btn">
+          <button onClick={this.handleClick}>{buttonText}</button>
+        </div>
+        
       </React.Fragment>
     )
   }

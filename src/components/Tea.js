@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Tea(props) {
   return (
     <React.Fragment>
-      <div onClick={() => props.whenTeaClicked(props.id)}>
+      <div className="tea" onClick={() => props.whenTeaClicked(props.id)}>
         <h3>{props.name}</h3>
         <h5>Origin: {props.origin}</h5>
         <h5>Type: {props.type}</h5>

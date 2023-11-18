@@ -7,6 +7,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inventory-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inventory-ctrl-btn {
+  align-self: center;
+}
+
+.tea {
+  width: 30%;
+  margin: 0 10% 5% 10%;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.stock-tea, .tea-details {
+  align-self: center;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -17,33 +17,35 @@ function StockInventoryForm(props) {
 
   return (
     <React.Fragment>
-      <h3>Stock New Inventory</h3>
-      <hr/>
-      <form onSubmit={handleStockInventoryFormSubmission}>
-        <label htmlFor='name'>Tea Name: </label>
-        <input 
-          type='text' 
-          name='name' />
-        <br/>
-        <label htmlFor='origin'>Origin: </label>
-        <input 
-          type='text' 
-          name='origin' />
-        <br/>
-        <label htmlFor='type'>Type: </label>
-        <input 
-          type='text' 
-          name='type'  
-          placeholder='black, green, oolong, etc.' />
-        <br/>
-        <label htmlFor='price'>Price: </label>
-        <input 
-          type='number' 
-          name='price' />
-        <br/>
-        <button type='submit'>Update Inventory</button>
-      </form>
-      <p>Note: One crate of tea contains 130oz. of loose leaf tea.</p>
+      <div className="stock-tea">
+        <h3>Stock New Inventory</h3>
+        <form onSubmit={handleStockInventoryFormSubmission}>
+          <label htmlFor='name'>Tea Name: </label>
+          <input
+            type='text'
+            name='name' />
+          <br />
+          <label htmlFor='origin'>Origin: </label>
+          <input
+            type='text'
+            name='origin' />
+          <br />
+          <label htmlFor='type'>Type: </label>
+          <input
+            type='text'
+            name='type'
+            placeholder='black, green, oolong, etc.' />
+          <br />
+          <label htmlFor='price'>Price: </label>
+          <input
+            type='number'
+            name='price' />
+          <br />
+          <button type='submit'>Update Inventory</button>
+        </form>
+        <p>Note: One crate contains 130oz. of loose leaf tea.</p>
+      </div>
+
     </React.Fragment>
   );
 }
