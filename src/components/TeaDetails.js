@@ -9,7 +9,7 @@ function TeaDetails(props) {
   }
 
   function handleDecrementTea() {
-    tea.quantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
+    // tea.quantity = tea.quantity > 0 ? tea.quantity-- : tea.quantity;
   }
 
   return (
