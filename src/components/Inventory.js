@@ -6,7 +6,7 @@ function Inventory(props) {
   return (
     <React.Fragment>
       <div className="inventory-container">
-        {props.inventory.map((tea) =>
+        {props.inventory.map((tea, index) =>
           <Tea
             whenTeaClicked={props.onTeaSelection}
             name={tea.name}
@@ -15,6 +15,7 @@ function Inventory(props) {
             price={tea.price}
             quantity={tea.quantity}
             id={tea.id}
+            key={index}
           />
         )}
       </div>
